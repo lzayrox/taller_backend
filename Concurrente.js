@@ -45,8 +45,7 @@ async function concurrentePorLotes() {
       console.log(`Lote procesado. Descargados: ${todosLosPersonajes.length}`);
 
       // Pausa de 1.3 segundos entre cada lote para no que no se sature  la API
-      await esperar(1300);
-    }
+      await esperar(2000);  }
 
     console.timeEnd("El tiempo Concurrente es de: ");
     return todosLosPersonajes;
@@ -55,5 +54,7 @@ async function concurrentePorLotes() {
     console.error("Hubo un error durante la ejecución:", error);
   }
 }
+
+
 
 concurrentePorLotes();
