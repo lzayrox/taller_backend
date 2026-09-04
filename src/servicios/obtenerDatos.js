@@ -76,5 +76,3 @@ async function concurrentePorLotes() {
 }
 
 export { concurrentePorLotes };
-
-concurrentePorLotes();
